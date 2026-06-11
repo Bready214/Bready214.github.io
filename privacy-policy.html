@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité – Peeper's Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #ff8c42;
+            --blue: #5b5ffa;
+            --red: #ff4d6d;
+            --green: #4ade80;
+            --dark: #1a1a2e;
+            --light: #f8f9ff;
+            --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #fff5f0 0%, #f0f4ff 50%, #fef0f5 100%);
+            color: var(--dark);
+            line-height: 1.7;
+            min-height: 100vh;
+        }/* Sticky Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 3px solid var(--orange);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: var(--orange);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--orange), var(--red), var(--blue), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            font-weight: 700;
+            color: var(--blue);
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            background: rgba(91, 95, 250, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        .header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.5rem;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+            border-left: 5px solid;
+            position: relative;
+        }
+
+        .card h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            padding-left: 1.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card a {
+            color: var(--blue);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Color variations for cards */
+        .card.orange { border-left-color: var(--orange); }
+        .card.orange h2 { color: var(--orange); }
+
+        .card.blue { border-left-color: var(--blue); }
+        .card.blue h2 { color: var(--blue); }
+
+        .card.red { border-left-color: var(--red); }
+        .card.red h2 { color: var(--red); }
+
+        .card.green { border-left-color: var(--green); }
+        .card.green h2 { color: #22c55e; }
+
+        /* Contact Card Special */
+        .card.contact {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.1), rgba(91, 95, 250, 0.1));
+            border: 2px solid var(--orange);
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--orange);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">🎮 <span>Peepers Party</span></a>
+        <a href="index.html" class="back-link">← Retour au site</a>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📜 Politique de Confidentialité</h1>
+            <p>Dernière mise à jour : juin 2026</p>
+        </div><!-- Section 1: Introduction -->
+        <div class="card orange">
+            <h2>👋 Introduction – Qui sommes-nous ?</h2>
+            <p>Bienvenue sur le site de <strong>Peepers Party</strong> ! Je suis un développeur solo qui crée ce jeu à des fins de test personnel avec mes amis. Ce projet n'est pas une structure commerciale établie — c'est un projet amateur réalisé pour le plaisir et l'apprentissage.</p>
+            <p style="margin-top: 1rem;">Cette politique de confidentialité explique comment vos données sont collectées et utilisées lorsque vous utilisez ce site web et le jeu Peepers Party.</p>
+        </div><!-- Section 2: Epic Online Services -->
+        <div class="card blue">
+            <h2>🎮 Données collectées via Epic Online Services (EOS)</h2>
+            <p>Peepers Party utilise <strong>Epic Online Services (EOS)</strong> pour l'authentification des joueurs. Lorsque vous vous connectez via votre compte Epic Games, les données suivantes sont collectées par Epic Games :</p>
+            <ul>
+                <li><strong>Identifiant de compte Epic</strong> – Un identifiant unique associé à votre compte</li>
+                <li><strong>Nom d'affichage</strong> – Le pseudonyme que vous utilisez sur Epic Games</li>
+                <li><strong>Informations de présence</strong> – Statut de connexion pour les fonctionnalités multijoueur</li>
+                <li><strong>Données de session</strong> – Informations nécessaires pour la connexion et la gestion des sessions de jeu</li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>Important :</strong> En tant que développeur solo, je n'ai <em>pas accès direct</em> à vos données de compte Epic. EOS gère l'authentification de manière sécurisée et je reçois uniquement les informations nécessaires pour vous permettre de jouer.</p>
+            <p style="margin-top: 1rem;">📄 Pour en savoir plus sur le traitement de vos données par Epic Games, consultez leur <a href="https://www.epicgames.com/site/fr/privacypolicy" target="_blank" rel="noopener">Politique de Confidentialité officielle</a>.</p>
+        </div><!-- Section 3: itch.io -->
+        <div class="card green">
+            <h2>📥 Données collectées via itch.io</h2>
+            <p>Le jeu Peepers Party est disponible en téléchargement sur <strong>itch.io</strong>. Lorsque vous téléchargez le jeu depuis cette plateforme :</p>
+            <ul>
+                <li>itch.io collecte ses propres données conformément à leur propre politique de confidentialité</li>
+                <li>Les données de téléchargement (historique, méthode de paiement si applicable) sont gérées par itch.io</li>
+                <li>Ce site web intègre un lien externe vers itch.io — nous ne collectons aucune donnée lors de votre navigation vers cette plateforme</li>
+            </ul>
+            <p style="margin-top: 1rem;">📄 Veuillez consulter la <a href="https://itch.io/docs/legal/privacy-policy" target="_blank" rel="noopener">Politique de Confidentialité d'itch.io</a> pour plus d'informations sur leurs pratiques.</p>
+        </div>
+
+        <!-- Section 4: Cookies -->
+        <div class="card red">
+            <h2>🍪 Cookies</h2>
+            <p><strong>Ce site web n'utilise aucun cookie tiers</strong> pour le suivi ou la publicité.</p>
+            <p style="margin-top: 0.8rem;">Le site peut utiliser des cookies techniques nécessaires au bon fonctionnement (préférences linguistiques, paramètres de session), mais ceux-ci ne collectent aucune donnée personnelle et sont immédiatement supprimés à la fermeture du navigateur.</p>
+        </div><!-- Section 5: Données personnelles sur ce site -->
+        <div class="card orange">
+            <h2>🌐 Données personnelles sur ce site</h2>
+            <p><strong>Aucune donnée personnelle n'est collectée via ce site web.</strong></p>
+            <p style="margin-top: 0.8rem;">Vous pouvez naviguer sur ce site, découvrir le jeu et accéder aux liens de téléchargement sans nous fournir aucune information personnelle. Nous ne collectons pas :</p>
+            <ul>
+                <li>Votre adresse email (sauf si vous nous contactez volontairement)</li>
+                <li>Votre adresse IP ou données de navigation</li>
+                <li>Vos données de localisation</li>
+            </ul>
+        </div><!-- Section 6: Droits des utilisateurs (RGPD) -->
+        <div class="card blue">
+            <h2>⚖️ Vos droits – RGPD</h2>
+            <p>Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong>, vous disposez des droits suivants :</p>
+            <ul>
+                <li><strong>Droit d'accès</strong> – Obtenir une confirmation du traitement de vos données et en recevoir une copie</li>
+                <li><strong>Droit de rectification</strong> – Demander la correction de données inexactes</li>
+                <li><strong>Droit à l'effacement</strong> – Demander la suppression de vos données</li>
+                <li><strong>Droit d'opposition</strong> – Vous opposer au traitement de vos données</li>
+                <li><strong>Droit à la portabilité</strong> – Recevoir vos données dans un format structuré</li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>Pour les données collectées via Epic Online Services :</strong> Veuillez contacter directement <a href="https://www.epicgames.com/site/fr/privacypolicy" target="_blank">Epic Games</a> pour exercer vos droits concernant les données de votre compte Epic.</p>
+            <p style="margin-top: 0.8rem;"><strong>Pour les données itch.io :</strong> Veuillez contacter directement itch.io pour toute demande relative à leurs services.</p>
+        </div><!-- Section 7: Sécurité des données -->
+        <div class="card green">
+            <h2>🔒 Sécurité des données</h2>
+            <p>La sécurité de vos données est importante pour moi. Voici les mesures mises en place :</p>
+            <ul>
+                <li><strong>Connexion sécurisée</strong> – Le site utilise HTTPS pour toutes les communications</li>
+                <li><strong>Stockage minimal</strong> – Je ne stocke aucune donnée personnelle sur mes serveurs</li>
+                <li><strong>Accès limité</strong> – Seul le développeur (moi) a accès aux données strictement nécessaires au fonctionnement du jeu</li>
+                <li><strong>EOS sécurisé</strong> – L'authentification via Epic Online Services utilise les protocoles de sécurité officiels d'Epic Games</li>
+            </ul>
+        </div>
+
+        <!-- Section 8: Modifications de la politique -->
+        <div class="card red">
+            <h2>📝 Modifications de cette politique</h2>
+            <p>Cette politique de confidentialité peut être modifiée à tout moment pour refléter des changements dans nos pratiques ou pour des raisons légales.</p>
+            <p style="margin-top: 0.8rem;"><strong>Quand ?</strong> En cas de modification majeure, la date en haut de cette page sera mise à jour.</p>
+            <p style="margin-top: 0.8rem;"><strong>Que faire ?</strong> Nous vous recommandons de consulter régulièrement cette page pour rester informé des changements.</p>
+        </div><!-- Section 9: Contact -->
+        <div class="card contact">
+            <h2>📧 Nous contacter</h2>
+            <p>Si vous avez des questions sur cette politique de confidentialité ou si vous souhaitez exercer vos droits, vous pouvez me contacter à :</p>
+            <p style="margin-top: 1rem; font-weight: 600; font-size: 1.1rem; color: var(--blue);">
+                infochopsalon.pro@gmail.com
+            </p>
+        </div>
+    </div><!-- Footer -->
+    <footer>
+        <p>Merci d'avoir découvert Peepers Party ! 🎮</p>
+        <p style="margin-top: 0.5rem;"><a href="index.html">← Retour à l'accueil</a></p>
+    </footer>
+</body>
+</html>
