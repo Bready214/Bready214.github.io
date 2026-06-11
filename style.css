@@ -802,3 +802,100 @@ img {
         gap: 1.5rem;
     }
 }
+
+/* Politique de confidentialité */
+.privacy-policy {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.policy-content {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.policy-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+.policy-content h2 {
+    font-size: 1.8em;
+    margin: 30px 0 15px 0;
+    color: #e0e0e0;
+}
+
+.policy-content p, .policy-content ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.policy-content a {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+.last-update {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+/* Navigation spécifique pour la politique */
+.navbar {
+    background-color: #121212;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-nav {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5em;
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
